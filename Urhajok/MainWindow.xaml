@@ -28,7 +28,7 @@
             <Button Content="Átlagos legénységszám" Margin="7" Height="25" Click="atlagoslegenyseg"/>
             <Button Content="Gyártók szerinti csoportosítás"
                     Margin="7" Height="25" Click="gyartokszerinti"/>
-            <Button Content="Keresés név alapján" Margin="7" Height="25"/>
+            <Button Content="Keresés név alapján" Margin="7" Height="25" Click="kereses"/>
 
             <TextBox x:Name="keresesTextBox" Margin="7" Height="25"/>
 

@@ -96,5 +96,14 @@ namespace Urhajok
         {
 
         }
+
+        private void kereses(object sender, RoutedEventArgs e)
+        {
+            // kereses nev szerint
+            string keresettNev = keresesTextBox.Text;
+            var talalat = urhajok.Where(u => u.Nev.Contains(keresettNev)).ToList();
+            urhajoDataGrid.ItemsSource = talalat;
+            urhajoDataGrid.Items.Refresh();
+        }
     }
 }
