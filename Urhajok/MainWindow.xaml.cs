@@ -39,14 +39,8 @@ namespace Urhajok
                 InditasEve = inditasEve;
             }
         }
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
 
-        private void betoltes(object sender, RoutedEventArgs e)
-        {
-            List<Urhajo> urhajok = new List<Urhajo>()
+        List<Urhajo> urhajok = new List<Urhajo>()
             {
                 new Urhajo("Falcon-9", 7, 550000, 87, "SpaceX", "Sikeres", 2020),
                 new Urhajo("Orion-X1", 4, 820000, 73, "NASA", "Folyamatban", 2023),
@@ -59,6 +53,13 @@ namespace Urhajok
                 new Urhajo("CosmoJet", 5, 430000, 93, "JAXA", "Sikertelen", 2016),
                 new Urhajo("Nebula-FX", 11, 870000, 60, "ESA", "Sikeres", 2020)
             };
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void betoltes(object sender, RoutedEventArgs e)
+        {
             urhajoDataGrid.ItemsSource = urhajok;
             urhajoDataGrid.Items.Refresh();
         }
@@ -66,6 +67,12 @@ namespace Urhajok
         private void hanyvan(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Az urhajok szama: {urhajoDataGrid.Items.Count}");
+        }
+
+        private void legnagyobbhatotav(object sender, RoutedEventArgs e)
+        {
+            var legnagyobb = urhajok.OrderByDescending(u => u.MaxHatotav).FirstOrDefault();
+            MessageBox.Show($"A legnagyobb hatótáv: {legnagyobb.MaxHatotav}, neve: {legnagyobb.Nev}");
         }
     }
 }
