@@ -74,5 +74,16 @@ namespace Urhajok
             var legnagyobb = urhajok.OrderByDescending(u => u.MaxHatotav).FirstOrDefault();
             MessageBox.Show($"A legnagyobb hatótáv: {legnagyobb.MaxHatotav}, neve: {legnagyobb.Nev}");
         }
+
+        private void sikereskuldetes(object sender, RoutedEventArgs e)
+        {
+            foreach (var urhajo in urhajok)
+            {
+                if (urhajo.KuldetesStatusz == "Sikeres")
+                {
+                    MessageBox.Show($"Sikeres kuldetesu urhajo: {urhajo.Nev}");
+                }
+            }
+        }
     }
 }

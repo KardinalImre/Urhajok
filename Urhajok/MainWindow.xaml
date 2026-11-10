@@ -24,7 +24,7 @@
             <Button Content="Melyiknek a legnagyobb a hatótávja?"
                     Margin="7" Height="25" Click="legnagyobbhatotav"/>
             <Button Content="Kik voltak sikeres küldetésen?"
-                    Margin="7" Height="25"/>
+                    Margin="7" Height="25" Click="sikereskuldetes"/>
             <Button Content="Átlagos legénységszám" Margin="7" Height="25"/>
             <Button Content="Gyártók szerinti csoportosítás"
                     Margin="7" Height="25"/>
