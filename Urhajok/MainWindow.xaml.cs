@@ -91,5 +91,10 @@ namespace Urhajok
             var atlag = urhajok.Average(u => u.Legenyseg);
             MessageBox.Show($"Az urhajok atlagos legenysege: {atlag}");
         }
+
+        private void gyartokszerinti(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
