@@ -62,5 +62,10 @@ namespace Urhajok
             urhajoDataGrid.ItemsSource = urhajok;
             urhajoDataGrid.Items.Refresh();
         }
+
+        private void hanyvan(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Az urhajok szama: {urhajoDataGrid.Items.Count}");
+        }
     }
 }

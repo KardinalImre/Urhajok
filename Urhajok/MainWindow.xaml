@@ -20,7 +20,7 @@
                        Margin="5,5,5,25"/>
 
             <Button Content="Adatok betöltése" Margin="7" Height="25" Click="betoltes"/>
-            <Button Content="Hány űrhajó van?" Margin="7" Height="25"/>
+            <Button Content="Hány űrhajó van?" Margin="7" Height="25" Click="hanyvan"/>
             <Button Content="Melyiknek a legnagyobb a hatótávja?"
                     Margin="7" Height="25"/>
             <Button Content="Kik voltak sikeres küldetésen?"
