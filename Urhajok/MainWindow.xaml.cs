@@ -54,6 +54,7 @@ namespace Urhajok
                 new Urhajo("Titan-Hawk", 14, 1050000, 48, "SpaceX", "Sikeres", 2021),
                 new Urhajo("CosmoJet", 5, 430000, 93, "JAXA", "Sikertelen", 2016),
                 new Urhajo("Nebula-FX", 11, 870000, 60, "ESA", "Sikeres", 2020)
+                //commit
             };
         }
 
