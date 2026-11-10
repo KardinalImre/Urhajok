@@ -42,6 +42,10 @@ namespace Urhajok
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void betoltes(object sender, RoutedEventArgs e)
+        {
             List<Urhajo> urhajok = new List<Urhajo>()
             {
                 new Urhajo("Falcon-9", 7, 550000, 87, "SpaceX", "Sikeres", 2020),
@@ -54,9 +58,9 @@ namespace Urhajok
                 new Urhajo("Titan-Hawk", 14, 1050000, 48, "SpaceX", "Sikeres", 2021),
                 new Urhajo("CosmoJet", 5, 430000, 93, "JAXA", "Sikertelen", 2016),
                 new Urhajo("Nebula-FX", 11, 870000, 60, "ESA", "Sikeres", 2020)
-                //commit
             };
+            urhajoDataGrid.ItemsSource = urhajok;
+            urhajoDataGrid.Items.Refresh();
         }
-
     }
 }
