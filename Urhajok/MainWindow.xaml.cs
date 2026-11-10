@@ -85,5 +85,11 @@ namespace Urhajok
                 }
             }
         }
+
+        private void atlagoslegenyseg(object sender, RoutedEventArgs e)
+        {
+            var atlag = urhajok.Average(u => u.Legenyseg);
+            MessageBox.Show($"Az urhajok atlagos legenysege: {atlag}");
+        }
     }
 }

@@ -25,7 +25,7 @@
                     Margin="7" Height="25" Click="legnagyobbhatotav"/>
             <Button Content="Kik voltak sikeres küldetésen?"
                     Margin="7" Height="25" Click="sikereskuldetes"/>
-            <Button Content="Átlagos legénységszám" Margin="7" Height="25"/>
+            <Button Content="Átlagos legénységszám" Margin="7" Height="25" Click="atlagoslegenyseg"/>
             <Button Content="Gyártók szerinti csoportosítás"
                     Margin="7" Height="25"/>
             <Button Content="Keresés név alapján" Margin="7" Height="25"/>
